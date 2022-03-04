@@ -3,7 +3,7 @@
 //a//
 const a = 5;
 let b = a;
-//gdy zmienimy wartosc zmiennej 'b' wartosc 'a' pozstanie taka sama
+//gdy zmienimy wartosc zmiennej 'b' wartosc 'a' pozstanie taka sama//
 b = b + 5;
 console.log(b);
 console.log(a);
