@@ -3,11 +3,6 @@
 // e) zredukuj tablicę obiektów do pojedynczego obiektu, który będzie zawierajał wszystkie klucze i wartości
 // wszystkich obiektów z tablicy, dzięki temu, że w punkcie d) odwrócilismy klucze z wartościami, nie będzie
 // z tym problemu :)
-// *f) odtwórz z obiektu tablicę, która będzie zawierała same nicknames i
-// nazwiska, których każda litera jest < s i
-// imię, którego chociaż jedna litera jest większa >= s
-// g) posortuj tablicę alfabetycznie
-// *
 
 const arr = [
   {
@@ -98,4 +93,19 @@ const arrFinal = arr.filter((value) => {
   }
 });
 const arrFinal2 = newObj(arrFinal);
-console.log(arrFinal2);
+let finalResult = arrFinal2.reduce((acc, curr) => {
+  return Object.assign(acc, curr);
+});
+
+console.log(finalResult);
+
+//f) g)
+// *f) odtwórz z obiektu tablicę, która będzie zawierała same nicknames i
+// nazwiska, których każda litera jest < s i
+// imię, którego chociaż jedna litera jest większa >= s
+// g) posortuj tablicę alfabetycznie
+// *
+
+// finalResult.filter((value) => {
+//   console.log(value);
+// });
